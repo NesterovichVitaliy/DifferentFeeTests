@@ -11,7 +11,7 @@ class MainKtTest {
 
         val result = feeOfVisaMir(amount, minFee)
 
-        assertEquals(75,result)
+        assertEquals(65,result)
     }
 
     @Test
@@ -21,7 +21,7 @@ class MainKtTest {
 
         val result = feeOfVisaMir(amount, minFee)
 
-        assertEquals(35,result)
+        assertEquals(25,result)
     }
 
     @Test
@@ -31,7 +31,7 @@ class MainKtTest {
 
         val result = feeOfMaestroMasterCard(amount, amountOfPreviousTransfers)
 
-        assertEquals(0,result)
+        assertEquals(1,result)
     }
 
     @Test
@@ -41,7 +41,7 @@ class MainKtTest {
 
         val result = feeOfMaestroMasterCard(amount, amountOfPreviousTransfers)
 
-        assertEquals(26,result)
+        assertEquals(46,result)
     }
 
     @Test
@@ -52,7 +52,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(0, result)
+        assertEquals(1, result)
     }
 
     @Test
@@ -63,7 +63,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -74,7 +74,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -85,7 +85,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -96,7 +96,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(35, result)
+        assertEquals(85, result)
     }
 
     @Test
@@ -107,7 +107,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -118,7 +118,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -129,7 +129,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -140,7 +140,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(35, result)
+        assertEquals(95, result)
     }
 
     @Test
@@ -151,7 +151,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -162,7 +162,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -173,7 +173,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -184,7 +184,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(26, result)
+        assertEquals(46, result)
     }
 
     @Test
@@ -195,7 +195,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -206,7 +206,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -217,7 +217,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -228,7 +228,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(26, result)
+        assertEquals(76, result)
     }
 
     @Test
@@ -239,7 +239,7 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 
     @Test
@@ -250,6 +250,6 @@ class MainKtTest {
 
         val result = fee(cardType, amountOfPreviousTransfers, amount)
 
-        assertEquals(-1, result)
+        assertEquals(-2, result)
     }
 }
